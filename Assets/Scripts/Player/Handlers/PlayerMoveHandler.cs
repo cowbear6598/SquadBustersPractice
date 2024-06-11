@@ -2,6 +2,7 @@
 using Controller;
 using TimeProvider;
 using UnityEngine;
+using UnityEngine.Serialization;
 using VContainer;
 using VContainer.Unity;
 
@@ -20,13 +21,13 @@ namespace Player.Handlers
 
 			var moveDirection = new Vector3(moveAxis.x, 0, moveAxis.y);
 
-			view.Move(moveDirection * settings.moveSpeed * timeProvider.GetDeltaTime());
+			view.Move(moveDirection * settings.MoveSpeed * timeProvider.GetDeltaTime());
 		}
 
 		[Serializable]
 		public class Settings
 		{
-			public float moveSpeed;
+			public float MoveSpeed;
 		}
 	}
 }
