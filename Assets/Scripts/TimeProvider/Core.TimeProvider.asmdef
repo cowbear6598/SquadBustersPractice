@@ -1,11 +1,7 @@
 {
-    "name": "Core.Unity.Main",
+    "name": "Core.TimeProvider",
     "rootNamespace": "",
-    "references": [
-        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
-        "GUID:766166d6007d5e147b2ad6e680a25201",
-        "GUID:adb86796926a4dd42a7e2090ce825a77"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

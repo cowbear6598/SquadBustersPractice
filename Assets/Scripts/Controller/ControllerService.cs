@@ -2,11 +2,11 @@
 
 namespace Controller
 {
-	public class PlayerController : IController
+	public class ControllerService : IController
 	{
 		private readonly PlayerInput input;
 
-		public PlayerController()
+		public ControllerService()
 		{
 			input = new PlayerInput();
 			input.Enable();

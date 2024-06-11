@@ -1,4 +1,5 @@
 ﻿using Controller;
+using TimeProvider;
 using VContainer;
 using VContainer.Unity;
 
@@ -8,7 +9,20 @@ namespace Unity.Main
 	{
 		protected override void Configure(IContainerBuilder builder)
 		{
-			builder.Register<PlayerController>(Lifetime.Singleton)
+			BindTimeProvider(builder);
+			BindController(builder);
+		}
+
+		private static void BindTimeProvider(IContainerBuilder builder)
+		{
+			builder.Register<TimeService>(Lifetime.Singleton)
+			       .AsImplementedInterfaces()
+			       .AsSelf();
+		}
+
+		private static void BindController(IContainerBuilder builder)
+		{
+			builder.Register<ControllerService>(Lifetime.Singleton)
 			       .AsImplementedInterfaces()
 			       .AsSelf();
 		}
