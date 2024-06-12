@@ -14,11 +14,6 @@ namespace Unity.Game
 		protected override void Configure(IContainerBuilder builder)
 		{
 			builder.RegisterInstance(playerSettings.moveSettings);
-
-			builder.RegisterComponentInHierarchy<PlayerView>();
-			builder.Register<PlayerMoveHandler>(Lifetime.Singleton)
-			       .AsImplementedInterfaces()
-			       .AsSelf();
 		}
 	}
 
