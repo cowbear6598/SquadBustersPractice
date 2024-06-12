@@ -9,6 +9,8 @@ namespace Unity.Main
 	{
 		protected override void Configure(IContainerBuilder builder)
 		{
+			builder.RegisterEntryPoint<Bootstrap>();
+
 			BindTimeProvider(builder);
 			BindController(builder);
 		}
