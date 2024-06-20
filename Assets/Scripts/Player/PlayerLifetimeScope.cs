@@ -7,12 +7,14 @@ namespace Player
 {
 	public class PlayerLifetimeScope : LifetimeScope
 	{
+		[SerializeField] private PlayerView playerView;
+
 		protected override void Configure(IContainerBuilder builder)
 		{
-			// builder.RegisterComponentInNewPrefab(prefab, Lifetime.Scoped);
-			// builder.Register<PlayerMoveHandler>(Lifetime.Scoped)
-			//        .AsImplementedInterfaces()
-			//        .AsSelf();
+			builder.RegisterComponent(playerView);
+			builder.Register<PlayerMoveHandler>(Lifetime.Singleton)
+			       .AsImplementedInterfaces()
+			       .AsSelf();
 		}
 	}
 }
