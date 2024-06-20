@@ -1,6 +1,6 @@
 ﻿namespace Network
 {
-	public interface INetwork
+	public interface INetworkService
 	{
 		void StartServer();
 		void StartClient();

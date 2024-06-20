@@ -1,15 +1,16 @@
-﻿using VContainer;
+﻿using Network.Views;
+using VContainer;
 
 namespace Network
 {
-	public class NetworkService : INetwork
+	public class NetworkService : INetworkService
 	{
-		[Inject] private readonly CustomNetworkManager networkManager;
+		[Inject] private readonly NetworkManagerView networkManagerView;
 
 		public void StartServer()
-			=> networkManager.StartServer();
+			=> networkManagerView.StartServer();
 
 		public void StartClient()
-			=> networkManager.StartClient();
+			=> networkManagerView.StartClient();
 	}
 }

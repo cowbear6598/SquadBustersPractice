@@ -34,18 +34,18 @@
       "dependencies": {
         "com.neuecc.unirx": "7.1.0",
         "com.cysharp.unitask": "2.5.4",
-        "com.unity.test-framework": "1.4.2",
-        "com.unity.addressables": "1.21.20",
+        "com.unity.test-framework": "1.4.4",
+        "com.unity.addressables": "1.21.21",
         "com.cysharp.messagepipe": "1.8.1"
       },
-      "hash": "fda631582e2df17713cc21a1ee0e99b31353ad9e"
+      "hash": "846f0a41e088fed96d14398da1e5e9524ce125a2"
     },
     "com.unity.addressables": {
-      "version": "1.21.20",
+      "version": "1.21.21",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.scriptablebuildpipeline": "1.21.22",
+        "com.unity.scriptablebuildpipeline": "1.21.23",
         "com.unity.modules.assetbundle": "1.0.0",
         "com.unity.modules.imageconversion": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
@@ -142,7 +142,7 @@
       }
     },
     "com.unity.scriptablebuildpipeline": {
-      "version": "1.21.22",
+      "version": "1.21.23",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
@@ -165,7 +165,7 @@
       }
     },
     "com.unity.test-framework": {
-      "version": "1.4.2",
+      "version": "1.4.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {

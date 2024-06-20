@@ -11,6 +11,9 @@ namespace Player
 
 		protected override void Configure(IContainerBuilder builder)
 		{
+			// if (!playerView.isLocalPlayer)
+			// 	return;
+
 			builder.RegisterComponent(playerView);
 			builder.Register<PlayerMoveHandler>(Lifetime.Singleton)
 			       .AsImplementedInterfaces()

@@ -1,5 +1,8 @@
 ﻿using Controller;
 using Network;
+using Network.Handlers;
+using Network.Views;
+using SoapTools.SceneController;
 using TimeProvider;
 using VContainer;
 using VContainer.Unity;
@@ -10,6 +13,8 @@ namespace Unity.Main
 	{
 		protected override void Configure(IContainerBuilder builder)
 		{
+			builder.Register<SceneRepository>(Lifetime.Singleton);
+
 			BindNetwork(builder);
 			BindTimeProvider(builder);
 			BindController(builder);
@@ -17,7 +22,8 @@ namespace Unity.Main
 
 		private static void BindNetwork(IContainerBuilder builder)
 		{
-			builder.RegisterComponentInHierarchy<CustomNetworkManager>();
+			builder.RegisterComponentInHierarchy<NetworkManagerView>();
+			builder.Register<NetworkClientRepository>(Lifetime.Singleton);
 			builder.Register<NetworkService>(Lifetime.Singleton)
 			       .AsImplementedInterfaces()
 			       .AsSelf();
