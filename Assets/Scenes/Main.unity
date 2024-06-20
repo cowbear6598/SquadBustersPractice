@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &132927581
 Transform:
   m_ObjectHideFlags: 0
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6298b53a6564a4dae9b32b48283eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDedicatedServer: 0
 --- !u!1 &317623743
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,13 +722,6 @@ MonoBehaviour:
   autoInjectGameObjects:
   - {fileID: 132927580}
   - {fileID: 317623743}
-  bootstrapSettings:
-    isServer: 1
-    gameScene:
-      m_AssetGUID: 7494666b653c2584796729a63b0669b6
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

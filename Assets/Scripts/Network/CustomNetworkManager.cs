@@ -7,24 +7,31 @@ namespace Network
 	{
 		public override void OnServerAddPlayer(NetworkConnectionToClient conn)
 		{
-			Debug.Log("OnServerAddPlayer");
+			Debug.LogError("OnServerAddPlayer");
 		}
 
 		public override void OnServerConnect(NetworkConnectionToClient conn)
 		{
-			Debug.Log("OnServerConnect");
+			Debug.LogError("OnServerConnect");
 		}
 
 		public override void OnStartServer()
 		{
-			Debug.Log("OnStartServer");
+			Debug.LogError("OnStartServer");
+		}
+
+		public override void OnServerDisconnect(NetworkConnectionToClient conn)
+		{
+			base.OnServerDisconnect(conn);
+
+			Debug.LogError("OnServerDisconnect");
 		}
 
 		public override void OnServerReady(NetworkConnectionToClient conn)
 		{
 			base.OnServerReady(conn);
 
-			Debug.Log("OnServerReady");
+			Debug.LogError("OnServerReady");
 		}
 	}
 }

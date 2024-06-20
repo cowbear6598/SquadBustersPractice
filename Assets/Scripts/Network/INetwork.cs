@@ -3,5 +3,6 @@
 	public interface INetwork
 	{
 		void StartServer();
+		void StartClient();
 	}
 }

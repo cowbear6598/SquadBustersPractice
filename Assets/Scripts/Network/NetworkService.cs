@@ -7,8 +7,9 @@ namespace Network
 		[Inject] private readonly CustomNetworkManager networkManager;
 
 		public void StartServer()
-		{
-			networkManager.StartServer();
-		}
+			=> networkManager.StartServer();
+
+		public void StartClient()
+			=> networkManager.StartClient();
 	}
 }
