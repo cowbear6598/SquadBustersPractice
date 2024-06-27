@@ -301,7 +301,7 @@ MonoBehaviour:
   - {fileID: 45473733}
   playerSettings:
     moveSettings:
-      MoveSpeed: 5
+      MoveSpeed: 10
 --- !u!1 &915694559
 GameObject:
   m_ObjectHideFlags: 0
