@@ -4,7 +4,7 @@ using UnityEngine;
 using VContainer;
 using Object = UnityEngine.Object;
 
-namespace Network.Applications.Handlers
+namespace Network.Application.Handlers
 {
 	public class NetworkPlayerHandler
 	{

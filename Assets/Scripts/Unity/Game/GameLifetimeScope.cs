@@ -1,5 +1,5 @@
 ﻿using System;
-using Player.Applications.Handlers;
+using Player.Application.Handlers;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;

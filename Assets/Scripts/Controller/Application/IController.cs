@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Controller
+namespace Controller.Application
 {
 	public interface IController
 	{

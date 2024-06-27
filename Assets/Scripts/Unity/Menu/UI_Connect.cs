@@ -1,7 +1,7 @@
 ﻿using System;
 using Mirror;
 using Network;
-using Network.Applications;
+using Network.Application;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;

@@ -1,7 +1,7 @@
 ﻿using Mirror;
 using UnityEngine;
 
-namespace Player.Infrastructures.Views
+namespace Player.Infrastructure.Views
 {
 	public class PlayerView : NetworkBehaviour
 	{

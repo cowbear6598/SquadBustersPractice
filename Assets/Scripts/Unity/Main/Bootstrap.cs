@@ -1,5 +1,5 @@
 ﻿using Network;
-using Network.Applications;
+using Network.Application;
 using SoapTools.SceneController;
 using UnityEngine;
 using UnityEngine.AddressableAssets;

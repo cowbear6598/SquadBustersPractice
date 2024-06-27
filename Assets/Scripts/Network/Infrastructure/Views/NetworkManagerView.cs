@@ -1,10 +1,10 @@
 ﻿using Mirror;
-using Network.Applications;
-using Network.Applications.Handlers;
+using Network.Application;
+using Network.Application.Handlers;
 using UnityEngine;
 using VContainer;
 
-namespace Network.Infrastructures.Views
+namespace Network.Infrastructure.Views
 {
 	public class NetworkManagerView : NetworkManager
 	{

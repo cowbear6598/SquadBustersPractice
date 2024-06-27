@@ -1,9 +1,10 @@
 ﻿using Controller;
+using Controller.Application;
 using NSubstitute;
 using NUnit.Framework;
 using Player;
-using Player.Applications.Handlers;
-using Player.Infrastructures.Views;
+using Player.Application.Handlers;
+using Player.Infrastructure.Views;
 using TimeProvider;
 using UnityEditor;
 using UnityEngine;

@@ -1,9 +1,9 @@
-﻿using Network.Applications;
-using Network.Applications.Handlers;
-using Network.Infrastructures.Views;
+﻿using Network.Application;
+using Network.Application.Handlers;
+using Network.Infrastructure.Views;
 using VContainer;
 
-namespace Network.Infrastructures
+namespace Network.Infrastructure
 {
 	public class NetworkService : INetworkService
 	{

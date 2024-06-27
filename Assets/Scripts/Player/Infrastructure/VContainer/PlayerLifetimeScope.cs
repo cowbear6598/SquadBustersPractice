@@ -1,10 +1,10 @@
-﻿using Player.Applications.Handlers;
-using Player.Infrastructures.Views;
+﻿using Player.Application.Handlers;
+using Player.Infrastructure.Views;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-namespace Player.Infrastructures.VContainer
+namespace Player.Infrastructure.VContainer
 {
 	public class PlayerLifetimeScope : LifetimeScope
 	{

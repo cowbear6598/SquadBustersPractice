@@ -1,10 +1,12 @@
 ﻿using System;
 using Controller;
+using Controller.Application.Inputs;
+using Controller.Infrastructure;
 using Network;
-using Network.Applications;
-using Network.Applications.Handlers;
-using Network.Infrastructures;
-using Network.Infrastructures.Views;
+using Network.Application;
+using Network.Application.Handlers;
+using Network.Infrastructure;
+using Network.Infrastructure.Views;
 using SoapTools.SceneController;
 using TimeProvider;
 using UnityEngine;
@@ -47,6 +49,10 @@ namespace Unity.Main
 
 		private void BindController(IContainerBuilder builder)
 		{
+			builder.Register<PCInput>(Lifetime.Singleton)
+			       .AsImplementedInterfaces()
+			       .AsSelf();
+
 			builder.Register<ControllerService>(Lifetime.Singleton)
 			       .AsImplementedInterfaces()
 			       .AsSelf();

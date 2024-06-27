@@ -1,4 +1,4 @@
-﻿namespace Network.Applications
+﻿namespace Network.Application
 {
 	public interface INetworkService
 	{

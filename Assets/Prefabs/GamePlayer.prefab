@@ -113,5 +113,6 @@ MonoBehaviour:
   parentReference:
     TypeName: Unity.Game.GameLifetimeScope
   autoRun: 1
-  autoInjectGameObjects: []
+  autoInjectGameObjects:
+  - {fileID: 6115465994928890827}
   playerView: {fileID: 3589309908871061073}
