@@ -131,9 +131,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 45473734}
-  - component: {fileID: 45473735}
   m_Layer: 0
-  m_Name: PlayerSpawner
+  m_Name: Bootstrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,25 +153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &45473735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45473733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 039ed1586a0b47679012772f55022cd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoints:
-  - {fileID: 418425670}
-  - {fileID: 657492966}
-  - {fileID: 1713007811}
-  - {fileID: 1208511995}
-  playerPrefab: {fileID: 3589309908871061073, guid: 1a8e42a9feed51f4d8b8e8980b01563e,
-    type: 3}
 --- !u!1 &242721683
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +297,8 @@ MonoBehaviour:
   parentReference:
     TypeName: Unity.Main.MainLifetimeScope
   autoRun: 1
-  autoInjectGameObjects: []
+  autoInjectGameObjects:
+  - {fileID: 45473733}
   playerSettings:
     moveSettings:
       MoveSpeed: 5

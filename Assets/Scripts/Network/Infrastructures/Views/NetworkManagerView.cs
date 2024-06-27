@@ -1,15 +1,15 @@
 ﻿using Mirror;
-using Network.Handlers;
+using Network.Applications;
+using Network.Applications.Handlers;
 using UnityEngine;
 using VContainer;
 
-namespace Network.Views
+namespace Network.Infrastructures.Views
 {
 	public class NetworkManagerView : NetworkManager
 	{
 		[Inject] private readonly NetworkClientRepository repository;
-
-		[SerializeField] private GameObject networkPlayerPrefab;
+		[Inject] private readonly NetworkPlayerHandler    playerHandler;
 
 		public override void OnServerAddPlayer(NetworkConnectionToClient conn)
 		{
@@ -24,9 +24,7 @@ namespace Network.Views
 
 			repository.AddClient(conn);
 
-			var player = Instantiate(networkPlayerPrefab);
-
-			NetworkServer.AddPlayerForConnection(conn, player);
+			playerHandler.SpawnMenuPlayer(conn);
 
 			base.OnServerConnect(conn);
 		}

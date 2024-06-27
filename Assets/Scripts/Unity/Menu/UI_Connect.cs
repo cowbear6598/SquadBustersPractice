@@ -1,6 +1,7 @@
 ﻿using System;
 using Mirror;
 using Network;
+using Network.Applications;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -18,14 +19,6 @@ namespace Unity.Menu
 
 		private void Awake()
 			=> connectBtn.onClick.AddListener(Connect);
-
-		private void Update()
-		{
-			if (Keyboard.current.kKey.wasPressedThisFrame)
-			{
-				startBtn.gameObject.SetActive(true);
-			}
-		}
 
 		private void Connect()
 		{

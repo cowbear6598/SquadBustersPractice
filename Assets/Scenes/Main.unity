@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6298b53a6564a4dae9b32b48283eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsDedicatedServer: 1
+  IsDedicatedServer: 0
   subScenes:
   - m_AssetGUID: ac80443f163834941844dffac06344fb
     m_SubObjectName: 
@@ -375,8 +375,6 @@ MonoBehaviour:
   evaluationMethod: 0
   evaluationInterval: 3
   timeInterpolationGui: 0
-  networkPlayerPrefab: {fileID: 8341052609878889148, guid: 3336b9f5058e93645b4fe052d56e8ba0,
-    type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,6 +822,12 @@ MonoBehaviour:
   autoInjectGameObjects:
   - {fileID: 132927580}
   - {fileID: 317623743}
+  networkSettings:
+    playerHandlerSettings:
+      menuNetworkPlayerPrefab: {fileID: 8341052609878889148, guid: 3336b9f5058e93645b4fe052d56e8ba0,
+        type: 3}
+      gameNetworkPlayerPrefab: {fileID: 6115465994928890827, guid: 1a8e42a9feed51f4d8b8e8980b01563e,
+        type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

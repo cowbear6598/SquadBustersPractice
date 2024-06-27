@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Mirror;
 
-namespace Network.Handlers
+namespace Network.Applications
 {
 	public class NetworkClientRepository
 	{
@@ -12,5 +12,8 @@ namespace Network.Handlers
 
 		public void RemoveClient(NetworkConnectionToClient conn)
 			=> clients.Remove(conn);
+
+		public List<NetworkConnectionToClient> GetNetworkClient()
+			=> clients;
 	}
 }

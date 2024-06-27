@@ -1,12 +1,12 @@
 ﻿using System;
 using Controller;
+using Player.Infrastructures.Views;
 using TimeProvider;
 using UnityEngine;
-using UnityEngine.Serialization;
 using VContainer;
 using VContainer.Unity;
 
-namespace Player.Handlers
+namespace Player.Applications.Handlers
 {
 	public class PlayerMoveHandler : ITickable
 	{

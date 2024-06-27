@@ -2,7 +2,8 @@
 using NSubstitute;
 using NUnit.Framework;
 using Player;
-using Player.Handlers;
+using Player.Applications.Handlers;
+using Player.Infrastructures.Views;
 using TimeProvider;
 using UnityEditor;
 using UnityEngine;

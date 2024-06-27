@@ -1,4 +1,6 @@
 ﻿using Mirror;
+using Network;
+using Network.Applications;
 using SoapTools.SceneController;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -10,6 +12,7 @@ namespace Unity.Menu
 	public class UI_StartGame : NetworkBehaviour
 	{
 		[Inject] private readonly SceneRepository sceneRepository;
+		[Inject] private readonly INetworkService networkService;
 
 		[SerializeField] private Button         startBtn;
 		[SerializeField] private AssetReference gameScene;
@@ -19,7 +22,11 @@ namespace Unity.Menu
 
 		[Command(requiresAuthority = false)]
 		private void Cmd_StartGame()
-			=> Rpc_StartGame();
+		{
+			Rpc_StartGame();
+
+			networkService.RemoveAllPlayers();
+		}
 
 		[ClientRpc]
 		private async void Rpc_StartGame()
