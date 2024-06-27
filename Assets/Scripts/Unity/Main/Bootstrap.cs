@@ -19,7 +19,7 @@ namespace Unity.Main
 			if (IsDedicatedServer)
 				StartServer();
 			else
-				networkService.StartClient();
+				StartClient();
 		}
 
 		private async void StartServer()
@@ -32,6 +32,14 @@ namespace Unity.Main
 				builder.LoadScene(subScene);
 
 			await builder.Execute();
+		}
+
+		private void StartClient()
+		{
+			var builder = new SceneControllerBuilder(sceneRepository);
+
+			builder.LoadScene(subScenes[0])
+			       .Execute();
 		}
 	}
 }
