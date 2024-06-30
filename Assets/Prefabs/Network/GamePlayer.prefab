@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentReference:
-    TypeName: 
+    TypeName: Unity.Game.GameLifetimeScope
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 6115465994928890827}
