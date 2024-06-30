@@ -1,5 +1,4 @@
 ﻿using System;
-using Controller;
 using Controller.Application;
 using Player.Infrastructure.Views;
 using TimeProvider;

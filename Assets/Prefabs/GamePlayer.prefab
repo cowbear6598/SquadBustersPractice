@@ -90,8 +90,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentReference:
-    TypeName: Unity.Game.GameLifetimeScope
+    TypeName: 
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 6115465994928890827}
   playerView: {fileID: 3589309908871061073}
+  moveHandlerSettings:
+    MoveSpeed: 5
